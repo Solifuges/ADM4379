@@ -107,6 +107,22 @@ body {
 	}
 }
 
+/* Submit Page */
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #2196F3;
+	padding: 10px;
+	width: 50%;
+}
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: left;
+}
+
 .submit {
 	background-color: #4CAF50;
 	border: none;
@@ -126,7 +142,12 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	  }
+}
+
+textarea {
+	width: 300px;
+	height: 150px;
+}
 
 
 /*table style */
