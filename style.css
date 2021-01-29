@@ -166,24 +166,33 @@ textarea {
 
 /*table style */
 table {
-font-family: arial, sans-serif;
-border-collapse: collapse;
-width: 100%;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
 }
 
 td, th {
-border: 1px solid #dddddd;
-text-align: left;
-padding: 8px;
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	table-layout: fixed;
 }
 
-tr:nth-child(even) {
-background-color: #dddddd;
+tbody {
+	background-color: #dddddd;
+
 }
+
+thead {
+	background-color: #4CAF50;
+}
+
+
 
 
 /* Link Colors */
 a {
-	color: #86c232;
+	color: #4CAF50;
 	text-decoration: none;
 }
