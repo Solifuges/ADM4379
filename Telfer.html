@@ -17,6 +17,27 @@
          <a
             href="Science.html">Faculty of Science</a>
       </div>
+      <select onchange="addTable()" id="department">
+         <option value="Code">Select</option>
+         <option value="Telfer">Telfer</option>
+         <option value="Law">Law</option>
+         <option value="Science">Science</option>
+         <option value="Engineering">Engineering</option>
+     </select>
+      <table>
+         <thead>
+            <tr>
+               <th>Course Code</th>
+               <th>Course Title</th>
+               <th>Average Grade Received</th>
+               <th>Average Difficulty</th>
+             </tr>
+         </thead>
+         <tbody id="container">
+            <!-- courses are dynamically displayed here -->
+         </tbody>
+      </table>
+
       <h1>Telfer</h1>
       <table>
          <tr>
