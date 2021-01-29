@@ -5,7 +5,7 @@
 body {
 	font-family: Arial;
 	padding: 10px;
-	background: #838688;
+	background: #222629;
 }
 
 /* Header/Blog Title */
@@ -67,9 +67,17 @@ body {
 
 /* Add a card effect for articles */
 .card {
-	background-color: #86c232;
-	padding: 20px;
-	margin-top: 20px;
+	padding: 100px;
+	margin: 0 50px 0 50px;
+}
+
+.card h2 {
+	color: #86c232;
+}
+
+p {
+	color: #f2f2f2;
+	line-height: 150%;
 }
 
 .ad {
@@ -171,4 +179,11 @@ padding: 8px;
 
 tr:nth-child(even) {
 background-color: #dddddd;
+}
+
+
+/* Link Colors */
+a {
+	color: #86c232;
+	text-decoration: none;
 }
