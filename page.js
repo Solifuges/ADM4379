@@ -1,95 +1,68 @@
 var courseListTelfer = [
     {
         code : "ADM4379",
-        grade : "grade = 5",
-        difficulty : "difficulty = 7",
-        comment : "blah blah"
+        title : "Management & Implementation of Web Technologies in Organizations",
+        grade : "A+",
+        difficulty : "7"        
     },
     {
-        code : "SOC3116",
-        grade : "grade = 3",
-        difficulty : "difficulty = 8",
-        comment : "comment comment comment"
+        code : "ADM3760",
+        title : "Business Law FR",
+        grade : "B+",
+        difficulty : "8"        
+    },
+    {
+        code : "ADM3716",
+        title : "Veille Concurentielle FR",
+        grade : "A",
+        difficulty : "3"        
     }
 ];
 
 var courseListLaw = [
     {
         code : "DCC2120",
+        title : "LAW COMMENT",
         grade : "grade = 5",
-        difficulty : "difficulty = 7",
-        comment : "LAW COMMENT"
+        difficulty : "difficulty = 7"
     },
     {
         code : "DCC3103",
+        title : "COMMENT OF LAW",
         grade : "grade = 3",
-        difficulty : "difficulty = 8",
-        comment : "COMMENT OF LAW"
+        difficulty : "difficulty = 8"
     }
 ];
 
 var courseListScience = [
     {
         code : "BIO1300",
+        title : "SCIENCE COMMENT",
         grade : "grade = 5",
-        difficulty : "difficulty = 7",
-        comment : "SCIENCE COMMENT"
+        difficulty : "difficulty = 7"
     },
     {
         code : "CHM4118",
+        title : "COMMENT OF SCIENCE",
         grade : "grade = 3",
-        difficulty : "difficulty = 8",
-        comment : "COMMENT OF SCIENCE"
+        difficulty : "difficulty = 8"
     }
 ];
 
 var courseListEngineering = [
     {
         code : "CVG2140",
+        title : "ENG COMMENT",
         grade : "grade = 5",
-        difficulty : "difficulty = 7",
-        comment : "ENG COMMENT"
+        difficulty : "difficulty = 7"
     },
     {
         code : "CVG3116",
+        title : "COMMENT OF ENG",
         grade : "grade = 3",
-        difficulty : "difficulty = 8",
-        comment : "COMMENT OF ENG"
+        difficulty : "difficulty = 8"
     }
 ];
-
-//// add course as cards ////
-// function addCourse() {
-//     for (var i = 0; i < courseList.length; i++){
-//         var hello = document.createElement("div"); //create div to put inside container
-//         hello.classList.add("card"); //give div class
-//         hello.id = "course"+i; //give div id
-
-//         document.getElementById("container").appendChild(hello);
-//         console.log("hello world");
-
-//         var c1 = document.createElement("h2");  
-//         hello.innerHTML = courseList[i].code;
-//         c1.id = "c1";
-//         document.getElementById("course"+i).appendChild(c1);
-
-//         var g1 = document.createElement("p"); 
-//         g1.innerHTML = courseList[i].grade;
-//         g1.id = "g1";
-//         document.getElementById("course"+i).appendChild(g1);
-
-//         var d1 = document.createElement("p"); 
-//         d1.innerHTML = courseList[i].difficulty;
-//         d1.id = "d1";
-//         document.getElementById("course"+i).appendChild(d1);
-
-//         var co1 = document.createElement("p"); 
-//         co1.innerHTML = courseList[i].comment;
-//         co1.id = "co1";
-//         document.getElementById("course"+i).appendChild(co1);
-
-//     }
-// }
 
 
 //// add courses as table ////
@@ -132,13 +105,47 @@ function addTable() {
 
 
         // populate table w/ course info //
-        var g1 = row.insertCell(1);
+        var co1 = row.insertCell(1);
+        co1.innerHTML = department[i].title;
+
+        var g1 = row.insertCell(2);
         g1.innerHTML = department[i].grade;
 
-        var d1 = row.insertCell(2);
+        var d1 = row.insertCell(3);
         d1.innerHTML = department[i].difficulty;
-
-        var co1 = row.insertCell(3);
-        co1.innerHTML = department[i].comment;
     }
 }
+
+
+//// add review as cards ////
+// function addCourse() {
+//     for (var i = 0; i < courseList.length; i++){
+//         var hello = document.createElement("div"); //create div to put inside container
+//         hello.classList.add("card"); //give div class
+//         hello.id = "course"+i; //give div id
+
+//         document.getElementById("container").appendChild(hello);
+//         console.log("hello world");
+
+//         var c1 = document.createElement("h2");  
+//         hello.innerHTML = courseList[i].code;
+//         c1.id = "c1";
+//         document.getElementById("course"+i).appendChild(c1);
+
+//         var g1 = document.createElement("p"); 
+//         g1.innerHTML = courseList[i].grade;
+//         g1.id = "g1";
+//         document.getElementById("course"+i).appendChild(g1);
+
+//         var d1 = document.createElement("p"); 
+//         d1.innerHTML = courseList[i].difficulty;
+//         d1.id = "d1";
+//         document.getElementById("course"+i).appendChild(d1);
+
+//         var co1 = document.createElement("p"); 
+//         co1.innerHTML = courseList[i].comment;
+//         co1.id = "co1";
+//         document.getElementById("course"+i).appendChild(co1);
+
+//     }
+// }
