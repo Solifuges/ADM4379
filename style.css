@@ -3,19 +3,13 @@
 }
 
 body {
-	font-family: Arial;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 18px;
 	padding: 10px;
 	background: #222629;
 }
 
-/* Header/Blog Title */
-.header {
-	padding: 30px;
-	text-align: center;
-	background: #6e6e6e;
-}
-
-.header h1 {
+h1 {
 	font-size: 50px;
 	color: #86c232;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -28,6 +22,9 @@ body {
 	background-color: #333;
 }
 
+.topnav-right {
+	float: right;
+}
 
 /* Style the topnav links */
 .topnav a {
@@ -46,29 +43,44 @@ body {
 	color: black;
 }
 
+/* Style Home Page */
+.home-container {
+	display: grid;
+	grid-template-columns: 100%;
+	padding: 10px;
+	margin: 10px 50px 50px 50px;
+	row-gap: 25px;
+	column-gap: 25px;
+}
+
+.home-item {
+	background-color: #6e6e6e;
+	padding: 50px;
+	font-size: 30px;
+	text-align: left;
+	margin: 25px 0 25px 0;
+}
 
 /* Create two unequal columns that floats next to each other */
-
 /* Left column */
 .leftcolumn {
 	float: left;
 	width: 75%;
 }
 
-
 /* Right column */
 .rightcolumn {
 	float: right;
 	width: 25%;
-	background-color: #838688 ;
+	background-color: #6e6e6e ;
 	padding-left: 20px;
 }
 
 
 /* Add a card effect for articles */
 .card {
-	padding: 100px;
-	margin: 0 50px 0 50px;
+	padding: 50px 100px 50px 100px;
+	margin: 25px 50px 100px 50px; /* top right bottom left */
 	background-color: #6e6e6e;
 }
 
@@ -82,7 +94,6 @@ p {
 }
 
 .ad {
-	background-color: #5a5959;
 	padding: 20px;
 	margin-top: 20px;
 }
@@ -92,15 +103,6 @@ p {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-
-/* Footer */
-.footer {
-	padding: 20px;
-	text-align: center;
-	background: #ddd;
-	margin-top: 20px;
 }
 
 
@@ -126,9 +128,10 @@ p {
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	background-color: #2196F3;
+	background-color: #4CAF50;
 	padding: 10px;
 	width: 50%;
+	margin-bottom: 50px;
 }
 .grid-item {
 	background-color: rgba(255, 255, 255, 0.8);
@@ -145,18 +148,10 @@ p {
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	font-size: 16px;
-	margin: 4px 2px;
+	margin: 10px 10px;
 	cursor: pointer;
 	border-radius: 12px;
-  }
-
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
 }
 
 textarea {
@@ -196,4 +191,10 @@ thead {
 a {
 	color: #4CAF50;
 	text-decoration: none;
+}
+
+/* Style Image */
+img {
+	width: 50%;
+	height: auto;
 }
